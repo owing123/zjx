@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Cake</title>
+  <style>
+    .box{
+    width: 600px;
+    height: 1200px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    }
+  </style>
+  <style>
+    .light {
+      width: 200px;
+      height: 200px;
+      background-color: #f0e68c; /* Yellow */
+      border-radius: 50%;
+      position: relative;
+    }
+    .candle {
+      width: 10px;
+      height: 100px;
+      background-color: #cd5c5c; /* IndianRed */
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .flame {
+      width: 20px;
+      height: 20px;
+      background-color: #ff4500; /* OrangeRed */
+      position: absolute;
+      border-radius: 50%;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: flicker 0.5s infinite alternate;
+    }
+    .cake1{
+      width: 300px;
+      height: 120px;
+      background-color: #cd5506; /* IndianRed */
+      position: relative;
+      bottom: 0;
+      left: 16%;
+      transform: translateX(-50%);
+    }
+    .cake2{
+      width: 450px;
+      height: 150px;
+      background-color: #964007; /* IndianRed */
+      position: relative;
+      bottom: 0;
+      left: 16%;
+      transform: translateX(-50%);
+    }
+    @keyframes flicker {
+      0% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="light">
+      <div class="candle">
+        <div class="flame">
+        </div>
+      </div>
+    </div>
+    <div class="cake1"></div>
+    <div class="cake2"></div>
+    <br/>
+    <br/>
+    <button onclick="myFunction()">吹蜡烛</button>
+  </div>
+  <script>
+    function myFunction() {
+      location.href="http://127.0.0.1:5500/cake1.html";
+    }
+</script>
+</body>
+</html>

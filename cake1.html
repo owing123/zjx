@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Cake</title>
+  <style>
+    .box{
+    width: 600px;
+    height: 1200px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    }
+  </style>
+  <style>
+    .candle {
+      width: 10px;
+      height: 100px;
+      background-color: #cd5c5c; /* IndianRed */
+      position: absolute;
+      bottom: 70.8%;
+      left: 36.8%;
+      transform: translateX(-50%);
+    }
+    .cake1{
+      width: 300px;
+      height: 120px;
+      background-color: #cd5506; /* IndianRed */
+      position: relative;
+      bottom: -16.65%;
+      left: 16%;
+      transform: translateX(-50%);
+    }
+    .cake2{
+      width: 450px;
+      height: 150px;
+      background-color: #964007; /* IndianRed */
+      position: relative;
+      bottom: -16.65%;
+      left: 16%;
+      transform: translateX(-50%);
+    }
+    @keyframes flicker {
+      0% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <style>
+    .c1{
+      width: 5px;
+      height: 120px;
+      background-color: #0f7fe9; /* IndianRed */
+      position: absolute;
+      bottom: 20%;
+      left: 70%;
+      transform: rotate(25deg);
+    }
+    .c2{
+      width: 5px;
+      height: 120px;
+      background-color: #0f7fe9; /* IndianRed */
+      position: absolute;
+      bottom: 16%;
+      left: 71.81%;
+      transform: rotate(65deg);
+    }
+    .b1{
+      width: 3px;
+      height: 26px;
+      background-color: #e42508; /* IndianRed */
+      position: absolute;
+      bottom: 33.5%;
+      left: 72.5%;
+      transform: rotate(15deg);
+      animation: flicker 0.3s infinite alternate;
+    }
+    .b2{
+      width: 3px;
+      height: 26px;
+      background-color: #e42508; /* IndianRed */
+      position: absolute;
+      bottom: 33%;
+      left: 74.8%;
+      transform: rotate(45deg);
+      animation: flicker 0.3s infinite alternate;
+    }
+    .b3{
+      width: 3px;
+      height: 26px;
+      background-color: #e42508; /* IndianRed */
+      position: absolute;
+      bottom: 28.5%;
+      left: 75.8%;
+      transform: rotate(75deg);
+      animation: flicker 0.3s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="candle"> </div>
+    <div class="cake1"></div>
+    <div class="cake2"></div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <button onclick="myFunction()">点这里</button>
+    <br/>
+    <br/>
+    <h1>生日快乐！</h1>
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="b1"></div>
+    <div class="b2"></div>
+    <div class="b3"></div>
+    <br/>
+    <br/>
+    
+  </div>
+  <script>
+    function myFunction() {
+      location.href="http://127.0.0.1:5500/cake2.html";
+    }
+</script>
+</body>
+</html>
